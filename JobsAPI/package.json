@@ -2,9 +2,9 @@
   "name": "Jobs API",
   "version": "1.0.0",
   "description": "API for tracking all your on going job hunting",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
