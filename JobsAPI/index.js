@@ -32,8 +32,11 @@ app.use(xss());
 
 // Swagger
 const swaggerUi = require("swagger-ui-express");
+const path = require("path");
 const yaml = require("yamljs");
-const swaggerDocument = yaml.load("./swagger.yaml");
+const yamlAbsolutePath = path.resolve(__dirname, "swagger.yaml");
+console.log(yamlAbsolutePath)
+const swaggerDocument = yaml.load(yamlAbsolutePath);
 
 app.get("/", (req, res) => {
   res.setHeader("Content-type", "text/html");
